@@ -2,9 +2,13 @@
   "name": "mern-ecommerce-project",
   "version": "1.0.0",
   "private": true,
+  "workspaces": [
+    "Frontend",
+    "MERN-E-Commerce-Backend"
+  ],
   "scripts": {
-    "build": "cd Frontend && npm run build",
-    "start": "cd Frontend && npm start",
-    "server": "cd MERN-E-Commerce-Backend && npm run server"
+    "build": "npm install --prefix Frontend && cd Frontend && npm run build",
+    "start": "npm install --prefix Frontend && cd Frontend && npm start",
+    "server": "npm install --prefix MERN-E-Commerce-Backend && cd MERN-E-Commerce-Backend && npm run server"
   }
 }
