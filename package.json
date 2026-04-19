@@ -1,0 +1,10 @@
+{
+  "name": "mern-ecommerce-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd Frontend && npm run build",
+    "start": "cd Frontend && npm start",
+    "server": "cd MERN-E-Commerce-Backend && npm run server"
+  }
+}
